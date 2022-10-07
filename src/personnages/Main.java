@@ -8,9 +8,22 @@ public class Main {
 		
 		System.out.println(asterix);
 		
-		Village rennes = new Village("Village des Irréductibles",30);
+		Village village = new Village("Village des Irréductibles",30);
 		
-		Gaulois gaulois = rennes.trouverHabitant(30);
+	
+		//Gaulois gaulois = village.trouverHabitant(30);
+		//Prob: Nous sommes hors tableau
+		
+		Chef Abraracourcix = new Chef("Abraracourcix",6,0,village);
+		
+		village.ajouterChef();
+		
+		//Gaulois gaulois = village.trouverHabitant(1);
+		//System.out.println(gaulois);
+		// null car j'ai du incrémenter de 1 le tableau car nous avons un habitant en plus dans un tableau de gaulois mais le chef est un Chef et pas un Gaulois (INSTRUCTION DU PROFESSEUR)
+
+		village.afficherVillageois();
+		
 
 	}
 }

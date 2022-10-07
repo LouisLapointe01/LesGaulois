@@ -26,7 +26,18 @@ public class Village {
 		
 	}
 	
+	public void ajouterChef() {
+		nbVillageois++;
+	}
+	
 	public Gaulois trouverHabitant(int numero) {
 		return villageois[numero];
+	}
+	
+	public void afficherVillageois() {
+		int i = 0;
+		while(i < nbVillageois){
+		System.out.println(villageois[i]);
+		}
 	}
 }
