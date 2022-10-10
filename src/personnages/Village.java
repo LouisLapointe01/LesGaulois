@@ -34,10 +34,13 @@ public class Village {
 		return villageois[numero];
 	}
 	
-	public void afficherVillageois() {
-		int i = 0;
+	public void afficherVillageois(Chef chef) {
+		int i = 2;
+		System.out.println("Dans village du chef "+ chef.getNom() +" vivent les légendaires gaulois :");
 		while(i < nbVillageois){
-		System.out.println(villageois[i]);
+		System.out.println(villageois[i].getNom());
+		i++;
 		}
+		
 	}
 }

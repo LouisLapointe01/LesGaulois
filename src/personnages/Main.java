@@ -1,4 +1,5 @@
 package personnages;
+import personnages.Village;
 
 public class Main {
 
@@ -22,8 +23,20 @@ public class Main {
 		//System.out.println(gaulois);
 		// null car j'ai du incrémenter de 1 le tableau car nous avons un habitant en plus dans un tableau de gaulois mais le chef est un Chef et pas un Gaulois (INSTRUCTION DU PROFESSEUR)
 
-		village.afficherVillageois();
+		Gaulois Enzo = new Gaulois("Enzo",10);
 		
-
+		Gaulois Rayan = new Gaulois("Rayan",10);
+		
+		Gaulois Obelix = new Gaulois("Obelix",25);
+		
+		village.ajouterHabitant(Enzo);
+		
+		village.ajouterHabitant(Rayan);
+		
+		village.ajouterHabitant(Obelix);
+		
+		village.afficherVillageois(Abraracourcix);
+		
 	}
+
 }
