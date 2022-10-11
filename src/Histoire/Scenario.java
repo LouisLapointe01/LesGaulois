@@ -1,13 +1,35 @@
-package personnages;
-import personnages.Village;
-
-public class Main {
+package Histoire;
+import personnages.*;
+public class Scenario {
 
 	public static void main(String[] args) {
-
-		Gaulois asterix = new Gaulois("asterix",100);
+		
+		System.out.println("TP1: \n");
+		
+		
+		Gaulois asterix = new Gaulois("asterix",8);
+		Romain minus = new Romain("Minus",6);
 		
 		System.out.println(asterix);
+		System.out.println(asterix.getNom());
+		
+		System.out.println("\n");
+		
+		asterix.parler("Bonjour à tous");
+		minus.parler("Un GAU... UN GAUGAU...");
+		asterix.frapper(minus);
+		asterix.frapper(minus);
+		asterix.frapper(minus);
+
+		Druide panoramix = new Druide("Panoramix",5,10);
+		panoramix.preparerPotion();
+		panoramix.preparerPotion();
+		panoramix.preparerPotion();
+		panoramix.preparerPotion();
+		
+		System.out.println("\n");	
+		System.out.println("TP2: \n");
+		
 		
 		Village village = new Village("Village des Irréductibles",30);
 		
