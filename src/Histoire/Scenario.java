@@ -4,30 +4,48 @@ public class Scenario {
 
 	public static void main(String[] args) {
 		
+		
+		
+		
 		System.out.println("TP1: \n");
 		
 		
-		Gaulois asterix = new Gaulois("asterix",8);
+		Gaulois asterix = new Gaulois("Asterix",8);
+		Gaulois obelix = new Gaulois("Obelix",10);
 		Romain minus = new Romain("Minus",6);
+		Druide panoramix = new Druide("Panoramix",5,10);
 		
-		System.out.println(asterix);
+		
+		/*System.out.println(asterix);*/
+		
 		System.out.println(asterix.getNom());
 		
 		System.out.println("\n");
-		
-		asterix.parler("Bonjour à tous");
-		minus.parler("Un GAU... UN GAUGAU...");
-		asterix.frapper(minus);
-		asterix.frapper(minus);
-		asterix.frapper(minus);
 
-		Druide panoramix = new Druide("Panoramix",5,10);
+		
 		panoramix.preparerPotion();
-		panoramix.preparerPotion();
-		panoramix.preparerPotion();
-		panoramix.preparerPotion();
+		
+		panoramix.booster(obelix);
+		
+		obelix.parler("Par bélénos ce n'est pas juste !");
+		
+		panoramix.booster(asterix);
+		
+		asterix.parler("Bonjour");
+		
+		minus.parler("Un GAU... UN GAUGAU...");
+		
+		asterix.frapper(minus);
 		
 		System.out.println("\n");	
+		
+		
+		
+		
+		
+		
+		
+		
 		System.out.println("TP2: \n");
 		
 		
