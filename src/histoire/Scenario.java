@@ -1,4 +1,4 @@
-package Histoire;
+package histoire;
 import personnages.*;
 public class Scenario {
 
