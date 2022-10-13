@@ -11,6 +11,7 @@ public class Scenario {
 		
 		
 		Gaulois asterix = new Gaulois("Asterix",8);
+		Gaulois michel = new Gaulois("mich",8);
 		Gaulois obelix = new Gaulois("Obelix",10);
 		Romain minus = new Romain("Minus",6);
 		Druide panoramix = new Druide("Panoramix",5,10);
