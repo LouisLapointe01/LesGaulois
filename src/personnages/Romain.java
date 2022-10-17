@@ -30,8 +30,8 @@ public class Romain {
 		else {
 			force -= forceCoup;
 		if (force > 0) {
-			//assert (force == force initial) : "La force du romain n'a pas varié";
 			parler("Aïe");
+			assert (force == forceInitial) : "La force du romain n'a pas varié";
 		} else {
 			parler("J'abandonne... " );
 		}
