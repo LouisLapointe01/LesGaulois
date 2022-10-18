@@ -2,6 +2,8 @@ package histoire;
 import personnages.*;
 public class Scenario {
 
+	private static final Equipement CASQUE = null;
+
 	public static void main(String[] args) {
 		
 		
@@ -76,7 +78,11 @@ public class Scenario {
 		village.ajouterHabitant(Obelix);
 		
 		village.afficherVillageois(Abraracourcix);
-		
+
+		minus.sEquiper(Equipement.CASQUE);
+		minus.sEquiper(Equipement.CASQUE);
+		minus.sEquiper(Equipement.BOUCLIER);
+		minus.sEquiper(Equipement.CASQUE);
 	}
 
 }
